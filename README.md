@@ -23,10 +23,14 @@ This contains all my study notes for android developer training.
   * Data - contains business logic & exposes app data
   * optional is the Domain layer, which simplifies interactions between UI & Data layers
 
+<img src="./assets/mad-arch-overview.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="250" height="200" />
+
 ### UI layer
 * made up of
   * UI elements that render data on the screen (elements are built using Views)
   * state holders that hold data, expose it to the UI & handle logic 
+<img src="./assets/mad-arch-overview-ui.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="250" height="200" />
+
 ### Data layer
 * the Data layer contains the business logic, made up of rules that determines how your app creates, stores & changes data
 * made up of repositories that each can contain zero to many data sources
@@ -37,6 +41,8 @@ This contains all my study notes for android developer training.
   * resolving conflicts between multiple data sources
   * abstracting sources of data from the app
   * contain business logic
+
+<img src="./assets/mad-arch-overview-data.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="250" height="200" />
 
 ### Domain layer
 * is responsible for encapsulating complex business logic, or logic that is reused by multiple ViewModels
